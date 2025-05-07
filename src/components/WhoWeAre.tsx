@@ -31,7 +31,7 @@ export default function WhoWeAre() {
       <div className='mt-5 lg:mt-0 px-10 '>
         <h2 className='text-4xl text-center lg:text-left'>{sections[selectedSection].title}</h2>
         <p className='mt-5 text-center lg:text-left'>{sections[selectedSection].text}</p>
-        <img src="/quienes-somos.jpg" alt="Gato en veterinaria" className='mt-5 lg:mt-3' />
+        <img src="quienes-somos.jpg" alt="Gato en veterinaria" className='mt-5 lg:mt-3' />
       </div>
 
     </section>
