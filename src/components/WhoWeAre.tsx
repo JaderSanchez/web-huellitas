@@ -20,7 +20,7 @@ export default function WhoWeAre() {
   };
   
   return (
-    <section className='grid lg:grid-cols-2 mt-10'>
+    <section id='WhoWeAre' className='grid lg:grid-cols-2 mt-10 scroll-mt-74'>
 
       <div className='lg:bg-[#f0f0f0] w-full lg:w-fit h-fit mx-auto flex lg:flex-col gap-3 p-4 rounded-xl'>
         <button className={`grow sm:flex-1 lg:w-[330px] text-lg lg:px-3 py-2 lg:py-3 rounded-lg lg:rounded-xl cursor-pointer transition-all duration-400 ${ selectedSection === 'who' ? 'bg-[#1228f9] hover:bg-[#2b40ff] text-white' : 'bg-[#e2e2e2] hover:bg-[#d5d5d5]' }`} onClick={ () => setSelectedSection('who') } >Quienes somos</button>
