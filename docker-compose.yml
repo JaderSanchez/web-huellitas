@@ -1,0 +1,12 @@
+services:
+ astro:
+  image: oven/bun
+  container_name: personal-web-huellitas
+  restart: always
+  ports:
+   - "4002:4321"
+  volumes:
+   - ./:/home/bun/app
+  working_dir: /home/bun/app
+  command: >
+   sh -c "bun install && bun run build && bunx astro preview --host 0.0.0.0"
