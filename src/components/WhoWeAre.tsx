@@ -28,7 +28,7 @@ export default function WhoWeAre() {
         <button className={`grow sm:flex-1 lg:w-[330px] text-lg lg:px-3 py-2 lg:py-3 rounded-lg lg:rounded-xl cursor-pointer transition-all duration-400 ${ selectedSection === 'vision' ? 'bg-[#1228f9] hover:bg-[#2b40ff] text-white' : 'bg-[#e2e2e2] hover:bg-[#d5d5d5]' }`} onClick={ () => setSelectedSection('vision') } >Vision</button>
       </div>
 
-      <div className='mt-5 lg:mt-0 px-10 lg:px-0'>
+      <div className='mt-5 lg:mt-0 px-10 '>
         <h2 className='text-4xl text-center lg:text-left'>{sections[selectedSection].title}</h2>
         <p className='mt-5 text-center lg:text-left'>{sections[selectedSection].text}</p>
         <img src="/quienes-somos.jpg" alt="Gato en veterinaria" className='mt-5 lg:mt-3' />
