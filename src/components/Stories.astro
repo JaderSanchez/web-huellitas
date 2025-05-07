@@ -1,0 +1,44 @@
+---
+import StoryCard from "./StoryCard.astro";
+
+const tommyStory = `Tommy llegó a nosotros desnutrido y con una grave infección en una de sus patas. Había sido encontrado en la calle, asustado y sin fuerzas para moverse.
+
+Gracias a la rápida intervención veterinaria, recibió tratamiento, antibióticos y una dieta especial para recuperar su peso.
+
+Ahora Tommy recuperó su energía y su pelaje volvió a brillar.`;
+
+const miloStory = `Milo fue rescatado en una noche fría, acurrucado en una esquina con una profunda herida en su lomo y signos de desnutrición. Apenas podía moverse y temblaba de miedo cada vez que alguien se acercaba.
+
+Hoy, Milo es un gato lleno de vida, con un hogar donde recibe amor y compañía. Su pelaje volvió a brillar y sus ojos reflejan la felicidad de haber encontrado una segunda oportunidad.`;
+
+const simbaStory = `Simba llegó a nosotros muy débil, con heridas en su piel y signos de desnutrición severa. Había pasado varios días bajo la lluvia, buscando refugio sin éxito.
+
+Gracias al cuidado veterinario, una alimentación balanceada y mucho cariño, Simba logró sanar sus heridas y recuperar su fuerza.
+
+Hoy, Simba es un gato cariñoso y juguetón que ilumina cada lugar con su energía y ternura.`;
+
+const lunaStory = `Luna fue rescatada después de ser atropellada y quedar al borde de la carretera, herida y desorientada. Su patita trasera estaba fracturada y presentaba signos de deshidratación.
+
+Recibió cirugía de urgencia, cuidados postoperatorios y una rehabilitación llena de paciencia y dedicación.
+
+Hoy, Luna camina con total normalidad y disfruta de largas siestas al sol, rodeada de amor y seguridad.`;
+
+---
+
+<section class="relative mt-10 bg-[#1538ff] pt-12">
+
+  <h2 class="text-white text-center text-4xl">Historias</h2>
+
+  <div class="flex flex-nowrap overflow-x-auto px-18 gap-18 py-12">
+
+    <StoryCard image="tommy.png" name="Tommy" story={tommyStory} />
+    <StoryCard image="milo.png" name="Milo" story={miloStory} />
+    <StoryCard image="simba.png" name="Simba" story={simbaStory} />
+    <StoryCard image="luna.avif" name="Luna" story={lunaStory} />
+
+  </div>
+
+  <div class="absolute top-0 right-0 w-10 h-full bg-gradient-to-l from-black/20 to-transparent pointer-events-none"></div>
+  <div class="absolute top-0 left-0 w-10 h-full bg-gradient-to-r from-black/20 to-transparent pointer-events-none"></div>
+
+</section>

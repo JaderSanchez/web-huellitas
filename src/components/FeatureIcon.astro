@@ -1,0 +1,12 @@
+---
+interface Props {
+  text: string;
+  image: string;
+  size: 'md' | 'lg'
+}
+const { text, image, size } = Astro.props;
+---
+<div class="flex flex-col items-center">
+  <img src={`/features/${image}`} alt="Cat" class={size === 'md' ? 'w-14' : 'w-16'}>
+  <span class="text-white text-lg mt-2">{text}</span>
+</div>
